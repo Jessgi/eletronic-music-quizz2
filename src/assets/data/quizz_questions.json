@@ -1,0 +1,73 @@
+{
+  "title": "Qual vertente da música eletrônica combina mais com você?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual ambiente você prefere para curtir música?",
+      "options": [
+        { "id": 1, "name": "Clube underground com luzes baixas", "alias": "A" },
+        { "id": 2, "name": "Festa open-air no meio da natureza", "alias": "B" },
+        { "id": 3, "name": "Festival gigante com muita energia", "alias": "C" },
+        { "id": 4, "name": "Lounge sofisticado e elegante", "alias": "D" },
+        { "id": 5, "name": "Rave em meio à natureza", "alias": "E" },
+        { "id": 6, "name": "Balada clássica cheia de groove", "alias": "F" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "O que mais te atrai em uma track de música eletrônica?",
+      "options": [
+        { "id": 1, "name": "Batidas pesadas e hipnóticas", "alias": "A" },
+        { "id": 2, "name": "Elementos orgânicos e percussivos", "alias": "B" },
+        { "id": 3, "name": "Drops explosivos e energéticos", "alias": "C" },
+        { "id": 4, "name": "Melodias profundas e envolventes", "alias": "D" },
+        { "id": 5, "name": "Camadas psicodélicas, BPM acelerado e atmosferas cósmicas", "alias": "E" },
+        { "id": 6, "name": "Vocais e grooves cativantes", "alias": "F" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual desses artistas você curte mais?",
+      "options": [
+        { "id": 1, "name": "Adam Beyer", "alias": "A" },
+        { "id": 2, "name": "Black Coffee", "alias": "B" },
+        { "id": 3, "name": "Martin Garrix", "alias": "C" },
+        { "id": 4, "name": "Anyma", "alias": "D" },
+        { "id": 5, "name": "Astrix", "alias": "E" },
+        { "id": 6, "name": "Carl Cox", "alias": "F" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "O que não pode faltar em uma festa para você?",
+      "options": [
+        { "id": 1, "name": "Som pesado e industrial", "alias": "A" },
+        { "id": 2, "name": "Boa vibe e conexão com a natureza", "alias": "B" },
+        { "id": 3, "name": "Muita gente pulando junto", "alias": "C" },
+        { "id": 4, "name": "Uma experiência audiovisual intensa", "alias": "D" },
+        { "id": 5, "name": "Túnel de luzes psicodélicas e batidas rápidas que te levam a outra dimensão", "alias": "E" },
+        { "id": 6, "name": "Grooves dançantes e ritmos envolventes", "alias": "F" }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Como você descreveria seu estilo de vida?",
+      "options": [
+        { "id": 1, "name": "Noturno e urbano", "alias": "A" },
+        { "id": 2, "name": "Espiritual e conectado à natureza", "alias": "B" },
+        { "id": 3, "name": "Aventureiro e enérgico", "alias": "C" },
+        { "id": 4, "name": "Criativo e inovador", "alias": "D" },
+        { "id": 5, "name": "Livre e transcendental", "alias": "E" },
+        { "id": 6, "name": "Sociável e sempre pronto para dançar", "alias": "F" }
+      ]
+    }
+  ],
+  "results": {
+    "A": "🎧 Você combina com o **Techno**! Gosta de batidas pesadas, ambientes escuros e um som hipnótico e intenso. O BPM entre 120-135 e a pegada industrial fazem parte do seu DNA musical.",
+    "B": "🪘 Você combina com o **Afro House**! Prefere uma sonoridade orgânica, percussiva e que te conecta com a essência da música. Seus sets são cheios de groove e emoção.",
+    "C": "🎆 Você combina com o **EDM/Mainstage**! Ama energia, festivais gigantes e aquele drop que faz todo mundo pular junto. A vibe do Tomorrowland é a sua praia!",
+    "D": "🌌 Você combina com o **Melodic Techno/Progressive House**! Prefere melodias envolventes, visuais impactantes e um som emocionalmente profundo, com sintetizadores poderosos e atmosferas cinematográficas.",
+    "E": "🚀 Você combina com o **Psytrance**! Adora BPM acelerado (140-150), sintetizadores ácidos, atmosferas psicodélicas e festas imersivas. O Psytrance leva você a um estado de transe, onde a música guia sua mente e corpo para uma jornada cósmica.",
+    "F": "🎶 Você combina com o **House**! Gosta de grooves dançantes, vocais cativantes e aquele clima clássico de balada. Do Chicago House ao Tech House, o importante é manter a pista animada!"
+  }
+}
