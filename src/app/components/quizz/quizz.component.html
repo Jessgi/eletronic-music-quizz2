@@ -1,28 +1,49 @@
 <div class="quizz__container">
 
+  <!-- LOGO DO QUIZ -->
   <div class="quizz_logo">
-    <img src="\assets\imgs\logo.png" alt="" srcset="">
-    <h3>{{title}}</h3>
+    <img src="/assets/imgs/logo.png" alt="Logo">
+    <h3>{{ title }}</h3>
   </div>
 
-  <div *ngIf=!finished class="quizz_questions">
-      <h3>{{questionSelected.question}}</h3>
+  <!-- EXIBIÇÃO DAS PERGUNTAS ANTES DO RESULTADO -->
+  <div *ngIf="!finished">
+    
+    <div class="quizz_questions">
+      <h3>{{ questionSelected?.question }}</h3>
+    </div>
+
+    <div class="quizz_options">
+      <button
+        *ngFor="let option of questionSelected?.options"
+        (click)="playerChoose(option.alias)"
+        class="btn-option"
+      >
+        {{ option.name }}
+      </button>
+    </div>
+
   </div>
 
-  <div *ngIf=!finished class="quizz_options">
-
-    <button
-      *ngFor="let option of questionSelected.options; let i = index"
-      (click)="playerChoose(option.alias)"
-      class="btn-option"
-    >
-      {{option.name}}
-    </button>
-
-  </div>
-
-  <div *ngIf=finished class="quizz_results">
+  <!-- EXIBIÇÃO DO RESULTADO FINAL -->
+  <div *ngIf="finished" class="quizz_results">
     <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+
+    <!-- Exibe o texto do resultado -->
+    <p class="result-text">{{ answerSelected?.text }}</p>
+
+    <!-- Exibe o player do Spotify apenas se houver um link válido -->
+    <div *ngIf="playlistLink" class="playlist-container">
+      <h3>Ouça essa playlist e aproveite! 🎶</h3>
+      <iframe *ngIf="playlistLink" [src]="playlistLink |safeUrl" width="100%" height="152" frameBorder="0"
+        allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+      </iframe>
+
+
+    </div>
+
+    <!-- Botão para refazer o quiz -->
+    <button class="btn-restart" (click)="restartQuiz()">🔄 Refazer Quiz</button>
   </div>
+
 </div>
