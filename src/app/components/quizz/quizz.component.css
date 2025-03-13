@@ -3,11 +3,13 @@ body {
   background-color: black;
   color: white;
   font-family: 'Segoe UI', sans-serif;
+  text-align: center;
 }
 
 /* Container principal */
 .quizz__container {
   width: 80%;
+  max-width: 900px;
   margin: auto;
   margin-top: 20px;
 }
@@ -23,6 +25,8 @@ body {
 
 .quizz_logo > h3 {
   margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Perguntas */
@@ -31,14 +35,17 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid black; 
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #222; 
-  width: 100%;
-  height: 200px;
-  font-size: 20px;
+  width: 70%; /* Ajuste para melhorar proporção */
+  height: auto;
+  padding: 20px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 20px;
-  color: black;
+  margin: auto;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Opções */
@@ -47,54 +54,55 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  gap: 15px; /* Espaçamento entre os botões */
 }
 
 .btn-option {
-  background-color: black; 
+  background-color: black;
   border-radius: 8px;
-  border: 2px solid white; 
-  width: 45%; /* Ajustado para evitar sobreposição */
-  min-width: 200px; /* Garante que o botão não fique muito pequeno */
+  border: 2px solid white;
+  width: 40%; /* Ajuste para melhor proporção */
+  min-width: 220px; /* Evita botões muito pequenos */
   cursor: pointer;
-  color: white; 
-  font-size: 17px;
+  color: white;
+  font-size: 18px;
   padding: 16px;
   text-align: center;
-  margin: 5px; /* Espaçamento entre os botões */
+  transition: 0.3s ease-in-out;
 }
 
 .btn-option:hover {
-  background-color: #333333;
+  background-color: #333;
+  transform: scale(1.05); /* Pequeno efeito ao passar o mouse */
 }
 
 .btn-option:active {
-  position: relative;
-  top: 1px;
+  transform: scale(0.95);
 }
 
 /* Resultado do Quiz */
 .quizz_results {
-  width: 100%;
+  width: 70%;
   max-width: 800px;
-  background-color: #222; /* Mudando para um fundo escuro para contraste */
+  background-color: #222;
   border-radius: 10px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; 
-  font-size: 20px;
+  color: white;
+  font-size: 22px;
   text-align: center;
   margin: auto;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Texto do resultado */
 .result-text {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 15px;
 }
 
@@ -127,8 +135,37 @@ iframe {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-restart:hover {
   background-color: #cc3c3c;
+  transform: scale(1.05);
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+  .quizz__container {
+    width: 95%;
+  }
+
+  .quizz_questions {
+    width: 90%;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .btn-option {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .quizz_results {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .result-text {
+    font-size: 20px;
+  }
 }
